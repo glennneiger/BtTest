@@ -65,13 +65,32 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="onConnectWhite"
-            android:text="Con White" />
+            android:text="Stop" />
     </LinearLayout>
 
     <Spinner
         android:id="@+id/soundlist"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="40dp"
+        android:background="@android:color/holo_green_dark"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" />
+
+    <Spinner
+        android:id="@+id/devices"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#808080"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:id="@+id/selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Selected"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/memo1"
